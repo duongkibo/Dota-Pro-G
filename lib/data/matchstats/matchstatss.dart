@@ -2,8 +2,8 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter_architecture/data/matchstats/playerstats.dart';
 import 'package:flutter_architecture/data/matchstats/team.dart';
 import 'package:json_annotation/json_annotation.dart';
-
 part 'matchstatss.g.dart';
+@JsonSerializable()
 class MatchStatss extends Equatable
 {
   @JsonKey(name : "match_id") int matchId = 0;
@@ -22,7 +22,7 @@ class MatchStatss extends Equatable
   @JsonKey(name : "dire_team") Team direTeam;
   @JsonKey(name : "players")  List<PlayerStats> players;
 
-  MatchStats(
+  MatchStatss(
       {this.matchId,
       this.isRadiantWin,
       this.direScore,
@@ -38,8 +38,8 @@ class MatchStatss extends Equatable
       this.radiantTeam,
       this.direTeam,
       this.players});
-  factory MatchStats.fromJson(Map<String,dynamic> json) => _$MatchStatsFromJson(json);
-  Map<String,dynamic> toJson()=> _$MatchStatsToJson(this);
+  factory MatchStatss.fromJson(Map<String,dynamic> json) => _$MatchStatssFromJson(json);
+  Map<String,dynamic> toJson()=> _$MatchStatssToJson(this);
 
   @override
   List<Object> get props {
