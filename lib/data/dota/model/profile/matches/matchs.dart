@@ -1,10 +1,10 @@
 import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'match.g.dart';
+part 'matchs.g.dart';
 
 @JsonSerializable()
-class Match extends Equatable
+class Matchs extends Equatable
 {
   @JsonKey(name: 'match_id')
   int matchId;
@@ -25,7 +25,7 @@ class Match extends Equatable
   @JsonKey(name: 'start_time')
   int startTime;
 
-  Match(
+  Matchs(
       {this.matchId,
       this.herId,
       this.playerSlot,
@@ -35,8 +35,8 @@ class Match extends Equatable
       this.lobbyType,
       this.isRadiantWin,
       this.startTime});
-  factory Match.fromJson(Map<String,dynamic> json) => _$MatchFromJson(json);
-  Map<String,dynamic> toJson() => _$MatchToJson(this);
+  factory Matchs.fromJson(Map<String,dynamic> json) => _$MatchsFromJson(json);
+  Map<String,dynamic> toJson() => _$MatchsToJson(this);
 
 
   @override
