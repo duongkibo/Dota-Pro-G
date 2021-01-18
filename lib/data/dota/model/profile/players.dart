@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_architecture/data/profile/player/player.dart';
+import 'package:flutter_architecture/data/dota/model/profile/player/player.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:json_serializable/json_serializable.dart';
 

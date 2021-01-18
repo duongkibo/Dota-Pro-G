@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter_architecture/data/matchstats/playerstats.dart';
-import 'package:flutter_architecture/data/matchstats/team.dart';
+import 'package:flutter_architecture/data/dota/model/matchstats/playerstats.dart';
+import 'package:flutter_architecture/data/dota/model/matchstats/team.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'matchstatss.g.dart';
 @JsonSerializable()
