@@ -14,8 +14,7 @@ class HeroRepo implements HeroRepository
      assert(playerId!=null);
      return await dotaApi.getHeroes(playerId);
 
-   }
-   on DioError catch (dioError) {
+   } on DioError catch (dioError) {
      throw ApiException(exception: dioError);
    } catch (e) {
      throw Exception('Unexpected Exception $e');

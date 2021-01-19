@@ -9,6 +9,7 @@ import 'package:flutter_architecture/data/user/source/local/sessions_pref.dart';
 import 'package:flutter_architecture/di/injection/injection.dart';
 import 'package:flutter_architecture/presentation/home/home_route.dart';
 import 'package:flutter_architecture/presentation/login/login_route.dart';
+import 'package:flutter_architecture/presentation/splash/splash_route.dart';
 import 'package:flutter_architecture/utility/logging.dart';
 import 'package:flutter_architecture/utility/style/style.dart';
 import 'package:flutter_architecture/utility/utils/string_utils.dart';
