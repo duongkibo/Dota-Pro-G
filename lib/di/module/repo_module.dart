@@ -9,4 +9,5 @@ class RepoModule extends DIModule {
   getIt.registerFactory<UserRepoImpl>(
             () => UserRepoImpl(userApi: getIt.get<UserApi>()));
   }
+
 }
